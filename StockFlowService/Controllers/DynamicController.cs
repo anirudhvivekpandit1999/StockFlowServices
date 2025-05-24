@@ -8,11 +8,11 @@ namespace StockFlowService.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class DynamicController : ControllerBase
+    public class StockInAndOutInboundOutboundMovementController : ControllerBase
     {
         private readonly ProcedureService _service;
 
-        public DynamicController(ProcedureService service)
+        public StockInAndOutInboundOutboundMovementController(ProcedureService service)
         {
             _service = service;
         }

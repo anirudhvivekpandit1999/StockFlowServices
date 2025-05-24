@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Dynamic/AddNewForm": {
+    "/api/StockInAndOutInboundOutboundMovement/AddNewForm": {
       "post": {
         "tags": [
-          "Dynamic"
+          "StockInAndOutInboundOutboundMovement"
         ],
         "requestBody": {
           "content": {
@@ -36,10 +36,10 @@
         }
       }
     },
-    "/api/Dynamic/GetStockFlowData": {
+    "/api/StockInAndOutInboundOutboundMovement/GetStockFlowData": {
       "post": {
         "tags": [
-          "Dynamic"
+          "StockInAndOutInboundOutboundMovement"
         ],
         "responses": {
           "200": {
@@ -48,10 +48,10 @@
         }
       }
     },
-    "/api/Dynamic/GetSideBarData": {
+    "/api/StockInAndOutInboundOutboundMovement/GetSideBarData": {
       "post": {
         "tags": [
-          "Dynamic"
+          "StockInAndOutInboundOutboundMovement"
         ],
         "responses": {
           "200": {

@@ -1,24 +1,24 @@
 [
   {
-    "ContainingType": "StockFlowService.Controllers.DynamicController",
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
     "Method": "AddNewForm",
-    "RelativePath": "api/Dynamic/AddNewForm",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/AddNewForm",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "StockFlowService.Controllers.DynamicController\u002BEncryptedRequest",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "StockFlowService.Controllers.DynamicController",
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
     "Method": "GetSideBarData",
-    "RelativePath": "api/Dynamic/GetSideBarData",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/GetSideBarData",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -26,9 +26,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "StockFlowService.Controllers.DynamicController",
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
     "Method": "GetStockFlowData",
-    "RelativePath": "api/Dynamic/GetStockFlowData",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/GetStockFlowData",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
