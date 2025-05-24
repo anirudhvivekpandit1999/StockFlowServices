@@ -1,23 +1,38 @@
 [
   {
     "ContainingType": "StockFlowService.Controllers.DynamicController",
-    "Method": "CallProcedure",
-    "RelativePath": "api/Dynamic/{procedureName}",
+    "Method": "AddNewForm",
+    "RelativePath": "api/Dynamic/AddNewForm",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "procedureName",
-        "Type": "System.String",
-        "IsRequired": true
-      },
       {
         "Name": "request",
         "Type": "StockFlowService.Controllers.DynamicController\u002BEncryptedRequest",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.DynamicController",
+    "Method": "GetSideBarData",
+    "RelativePath": "api/Dynamic/GetSideBarData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.DynamicController",
+    "Method": "GetStockFlowData",
+    "RelativePath": "api/Dynamic/GetStockFlowData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

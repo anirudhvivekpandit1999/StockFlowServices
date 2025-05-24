@@ -5,20 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Dynamic/{procedureName}": {
+    "/api/Dynamic/AddNewForm": {
       "post": {
         "tags": [
           "Dynamic"
-        ],
-        "parameters": [
-          {
-            "name": "procedureName",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -39,6 +29,30 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dynamic/GetStockFlowData": {
+      "post": {
+        "tags": [
+          "Dynamic"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dynamic/GetSideBarData": {
+      "post": {
+        "tags": [
+          "Dynamic"
+        ],
         "responses": {
           "200": {
             "description": "OK"

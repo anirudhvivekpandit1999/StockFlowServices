@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using StockFlowService.Data;
 using System.Data;
+using System.Text.Json;
 
 namespace StockFlowService.Services
 {
@@ -15,14 +16,41 @@ namespace StockFlowService.Services
 
         public async Task<object> CallStoredProcedureAsync(string procedureName, Dictionary<string, object> parameters)
         {
-            using var connection = _context.CreateConnection();
-            var dynamicParams = new DynamicParameters();
+            try
+            {
+                using var connection = _context.CreateConnection();
+                var dynamicParams = new DynamicParameters();
 
-            foreach (var param in parameters)
-                dynamicParams.Add($"@{param.Key}", param.Value);
+                foreach (var param in parameters)
+                {
+                    object value = param.Value;
 
-            var result = await connection.QueryAsync(procedureName, dynamicParams, commandType: CommandType.StoredProcedure);
-            return result.Any() ? result.First() : new { message = "No data found" };
+                    // Handle JsonElement conversion if needed
+                    if (value is JsonElement jsonElement)
+                    {
+                        value = jsonElement.ValueKind switch
+                        {
+                            JsonValueKind.String => jsonElement.GetString(),
+                            JsonValueKind.Number => jsonElement.TryGetInt32(out int intValue) ? intValue : jsonElement.GetDecimal(),
+                            JsonValueKind.True => true,
+                            JsonValueKind.False => false,
+                            _ => jsonElement.GetRawText()
+                        };
+                    }
+
+                    dynamicParams.Add($"@{param.Key}", value);
+                }
+
+                var result = await connection.QueryAsync(procedureName, dynamicParams, commandType: CommandType.StoredProcedure);
+                return  result ; // Return null instead of an anonymous object
+            }
+            catch (Exception ex)
+            {
+                // Log error (you can replace this with proper logging)
+                Console.WriteLine($"Error executing stored procedure '{procedureName}': {ex.Message}");
+                return null;
+            }
         }
+
     }
 }
