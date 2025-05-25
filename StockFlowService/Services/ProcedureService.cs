@@ -42,11 +42,11 @@ namespace StockFlowService.Services
                 }
 
                 var result = await connection.QueryAsync(procedureName, dynamicParams, commandType: CommandType.StoredProcedure);
-                return  result ; // Return null instead of an anonymous object
+                return  result ; 
             }
             catch (Exception ex)
             {
-                // Log error (you can replace this with proper logging)
+                
                 Console.WriteLine($"Error executing stored procedure '{procedureName}': {ex.Message}");
                 return null;
             }

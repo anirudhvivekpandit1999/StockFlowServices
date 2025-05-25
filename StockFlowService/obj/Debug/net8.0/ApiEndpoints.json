@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
+    "Method": "GetProductName",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/GetProductName",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
     "Method": "GetSideBarData",
     "RelativePath": "api/StockInAndOutInboundOutboundMovement/GetSideBarData",
     "HttpMethod": "POST",

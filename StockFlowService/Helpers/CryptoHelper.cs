@@ -22,7 +22,7 @@ namespace StockFlowService.Helpers
             var plainBytes = Encoding.UTF8.GetBytes(plainText);
             var cipherBytes = encryptor.TransformFinalBlock(plainBytes, 0, plainBytes.Length);
 
-            return Convert.ToHexString(cipherBytes); // Return hex-encoded ciphertext
+            return Convert.ToHexString(cipherBytes); 
         }
 
         public static Dictionary<string, object> DecryptData(string encryptedHex)
@@ -30,7 +30,7 @@ namespace StockFlowService.Helpers
             if (string.IsNullOrWhiteSpace(encryptedHex))
                 throw new ArgumentException("Input cannot be null or empty.");
 
-            var cipherBytes = Convert.FromHexString(encryptedHex); // Correctly decode hex string
+            var cipherBytes = Convert.FromHexString(encryptedHex); 
 
             using var aes = Aes.Create();
             aes.Key = Key;

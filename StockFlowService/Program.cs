@@ -12,15 +12,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ProcedureService>();
 builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
 var app = builder.Build();
 var tobeencrypted = new
-{
-    ProductSerialNumber = "PSN-983429-A1",
-    ProductName = "Industrial Fan",
-    Count = 12,
-    Name = "Anirudh Pandit",
-    Location = "Warehouse 7 - Sector B"
-};
+{ProductSerialNumber = "SN12345" };
 
 
 var x = CryptoHelper.EncryptData(tobeencrypted);
@@ -33,6 +32,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
