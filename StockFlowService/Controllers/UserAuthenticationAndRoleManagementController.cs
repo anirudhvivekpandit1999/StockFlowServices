@@ -11,7 +11,7 @@ using static StockFlowService.Controllers.StockInAndOutInboundOutboundMovementCo
 
 namespace StockFlowService.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UserAuthenticationAndRoleManagementController : Controller
     {
         private readonly ProcedureService _service;
@@ -64,6 +64,8 @@ namespace StockFlowService.Controllers
             {
 
                 var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
+                decrypted["Password"] = CryptoHelper.EncryptData(decrypted["Password"]);
+                Console.WriteLine(decrypted["Password"]);
                 var result = await _service.CallStoredProcedureAsync("spd_Login", decrypted);
                 var encrypted = CryptoHelper.EncryptData(result);
 
@@ -82,7 +84,8 @@ namespace StockFlowService.Controllers
             {
                 
                 var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
-                decrypted["Password"] = BCrypt.Net.BCrypt.HashPassword(decrypted["Password"].ToString()!);
+                decrypted["Password"] = CryptoHelper.EncryptData(decrypted["Password"]);
+                Console.WriteLine(decrypted["Password"]);
                 var result = await _service.CallStoredProcedureAsync("spd_SignUp", decrypted);
                 var encrypted = CryptoHelper.EncryptData(result);
 
