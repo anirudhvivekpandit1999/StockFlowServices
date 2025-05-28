@@ -17,20 +17,21 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll",
         builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
+
 var app = builder.Build();
 var tobeencrypted = new
-{ProductSerialNumber = "SN12345" };
+{Username = "Anirudh" , Password = "Vishalgad5@" };
 
 
 var x = CryptoHelper.EncryptData(tobeencrypted);
+Console.WriteLine(x);
 
-Console.WriteLine("encrypted", CryptoHelper.EncryptData(tobeencrypted));
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.MapControllers();
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
 

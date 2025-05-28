@@ -38,13 +38,13 @@ namespace StockFlowService.Controllers
         }
 
         [HttpPost("GetStockFlowData")]
-        public async Task<IActionResult> GetStockFlowData()
+        public async Task<IActionResult> GetStockFlowData([FromBody] EncryptedRequest request)
         {
             try
             {
 
-                //var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
-                var result = await _service.CallStoredProcedureAsync("spd_GetActivityCount", new Dictionary<string, object>());
+                var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
+                var result = await _service.CallStoredProcedureAsync("spd_GetActivityCount", decrypted);
                 var encrypted = CryptoHelper.EncryptData(result);
 
                 return Ok(new { encryptedData = encrypted });
