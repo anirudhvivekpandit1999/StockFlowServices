@@ -78,15 +78,15 @@ namespace StockFlowService.Controllers
         //}
 
         [HttpPost("GetAnalysis")]
-        public async Task<IActionResult> GetAnalysis() //[FromBody] EncryptedRequest request
+        public async Task<IActionResult> GetAnalysis([FromBody] EncryptedRequest request)
         {
             try
             {
 
-                //var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
+                var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
                 //decrypted["Password"] = CryptoHelper.EncryptData(decrypted["Password"]);
                 //Console.WriteLine(decrypted["Password"]);
-                var result = await _service.CallStoredProcedureAsync("spd_AnalyticsPage", new Dictionary<string, object> { });
+                var result = await _service.CallStoredProcedureAsync("spd_AnalyticsPage", decrypted);
                 var encrypted = CryptoHelper.EncryptData(result);
 
                 return Ok(new { encryptedData = encrypted });
