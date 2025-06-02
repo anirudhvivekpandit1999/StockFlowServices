@@ -1,5 +1,41 @@
 [
   {
+    "ContainingType": "StockFlowService.Controllers.DashboardController",
+    "Method": "GetAnalysis",
+    "RelativePath": "api/Dashboard/GetAnalysis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.InventoryManagementController",
+    "Method": "GetInventoryDetails",
+    "RelativePath": "api/InventoryManagement/GetInventoryDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.InventoryManagementController",
+    "Method": "GetInventoryList",
+    "RelativePath": "api/InventoryManagement/GetInventoryList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
     "Method": "AddNewForm",
     "RelativePath": "api/StockInAndOutInboundOutboundMovement/AddNewForm",
@@ -48,7 +84,45 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.UserAuthenticationAndRoleManagementController",
+    "Method": "Login",
+    "RelativePath": "api/UserAuthenticationAndRoleManagement/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.UserAuthenticationAndRoleManagementController",
+    "Method": "SignUp",
+    "RelativePath": "api/UserAuthenticationAndRoleManagement/SignUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

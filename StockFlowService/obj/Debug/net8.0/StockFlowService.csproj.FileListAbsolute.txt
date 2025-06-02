@@ -154,3 +154,4 @@ D:\Anirudh 855\StockFlowServices\StockFlowService\obj\Debug\net8.0\StockFlowServ
 D:\Anirudh 855\StockFlowServices\StockFlowService\obj\Debug\net8.0\ref\StockFlowService.dll
 D:\Anirudh 855\StockFlowServices\StockFlowService\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
