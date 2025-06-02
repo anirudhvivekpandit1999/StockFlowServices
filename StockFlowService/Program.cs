@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 var tobeencrypted = new
-{ProductName = "Laptop" };
+{StockStatus = "Transferred" , UserId = 10 };
 
 
 var x = CryptoHelper.EncryptData(tobeencrypted);
