@@ -2180,23 +2180,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anirudhp\\.nuget\\packages\\": {},
+    "C:\\Users\\aniru\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Anirudh 855\\StockFlowServices\\StockFlowService\\StockFlowService.csproj",
+      "projectUniqueName": "C:\\Users\\aniru\\T8\\StockFlowServices\\StockFlowService\\StockFlowService.csproj",
       "projectName": "StockFlowService",
-      "projectPath": "D:\\Anirudh 855\\StockFlowServices\\StockFlowService\\StockFlowService.csproj",
-      "packagesPath": "C:\\Users\\anirudhp\\.nuget\\packages\\",
-      "outputPath": "D:\\Anirudh 855\\StockFlowServices\\StockFlowService\\obj\\",
+      "projectPath": "C:\\Users\\aniru\\T8\\StockFlowServices\\StockFlowService\\StockFlowService.csproj",
+      "packagesPath": "C:\\Users\\aniru\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aniru\\T8\\StockFlowServices\\StockFlowService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\anirudhp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aniru\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2205,6 +2205,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

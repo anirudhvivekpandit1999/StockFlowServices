@@ -1,0 +1,229 @@
+[
+  {
+    "ContainingType": "StockFlowService.Controllers.DashboardController",
+    "Method": "GetAnalysis",
+    "RelativePath": "api/Dashboard/GetAnalysis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.InventoryManagementController",
+    "Method": "GetInventoryDetails",
+    "RelativePath": "api/InventoryManagement/GetInventoryDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.InventoryManagementController",
+    "Method": "GetInventoryList",
+    "RelativePath": "api/InventoryManagement/GetInventoryList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.ReportsAndLogsController",
+    "Method": "TestReportData",
+    "RelativePath": "api/ReportsAndLogs/TestReportData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.SearchBarAndFilterFunctionalityController",
+    "Method": "GetSearchedList",
+    "RelativePath": "api/SearchBarAndFilterFunctionality/GetSearchedList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
+    "Method": "AddNewForm",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/AddNewForm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
+    "Method": "GetProductName",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/GetProductName",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
+    "Method": "GetSideBarData",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/GetSideBarData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController",
+    "Method": "GetStockFlowData",
+    "RelativePath": "api/StockInAndOutInboundOutboundMovement/GetStockFlowData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncController",
+    "Method": "Pull",
+    "RelativePath": "api/sync/pull",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SyncController",
+    "Method": "Push",
+    "RelativePath": "api/sync/push",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SyncPushRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.UserAuthenticationAndRoleManagementController",
+    "Method": "Login",
+    "RelativePath": "api/UserAuthenticationAndRoleManagement/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.UserAuthenticationAndRoleManagementController",
+    "Method": "SignUp",
+    "RelativePath": "api/UserAuthenticationAndRoleManagement/SignUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.WarehouseLocationsController",
+    "Method": "GetWarehouseLocations",
+    "RelativePath": "api/WarehouseLocations/GetWarehouseLocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[StockFlowService.WeatherForecast, StockFlowService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
