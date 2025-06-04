@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 var tobeencrypted = new
-{StockStatus = "Recieved" , UserId = 10 };
+{ WarehouseId = 1, TestDate = "2025-05-29" };
 
 
 var x = CryptoHelper.EncryptData(tobeencrypted);
