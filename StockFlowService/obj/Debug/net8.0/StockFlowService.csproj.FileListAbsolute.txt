@@ -154,4 +154,3 @@ C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\refint\Sto
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\StockFlowService.pdb
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\StockFlowService.genruntimeconfig.cache
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\ref\StockFlowService.dll
-C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
