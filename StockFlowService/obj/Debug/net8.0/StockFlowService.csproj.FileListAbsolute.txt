@@ -148,7 +148,6 @@ C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\staticweba
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\StockFlo.47EDF9DC.Up2Date
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\StockFlowService.dll
 C:\Users\aniru\T8\StockFlowServices\StockFlowService\obj\Debug\net8.0\refint\StockFlowService.dll
