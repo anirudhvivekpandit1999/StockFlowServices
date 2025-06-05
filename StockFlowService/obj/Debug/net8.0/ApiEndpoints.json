@@ -138,6 +138,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "StockFlowService.Controllers.SupplierAndClientManagementController",
+    "Method": "GetAllClientsAndSuppliersData",
+    "RelativePath": "api/SupplierAndClientManagement/GetAllClientsAndSuppliersData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StockFlowService.Controllers.SupplierAndClientManagementController",
+    "Method": "GetClientAndSupplierHistory",
+    "RelativePath": "api/SupplierAndClientManagement/GetClientAndSupplierHistory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController\u002BEncryptedRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SyncController",
     "Method": "Pull",
     "RelativePath": "api/sync/pull",
