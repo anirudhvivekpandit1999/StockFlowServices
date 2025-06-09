@@ -29,7 +29,7 @@ namespace StockFlowService.Controllers
                 EmailHelper.SendEmail(
                     "anirudhvpandit.2152@gmail.com", // TODO: Replace with actual recipient
                     "Purchase Order",   // TODO: Customize subject
-                    $"Hi Sir , we request  order for {decrypted["ProductName"]} of {decrypted["Count"]} from ${decrypted["Name"]} . Please review." // TODO: Customize body
+                    $"Hi Sir , we request  order for {decrypted["ProductName"]} of {decrypted["Count"]} from {decrypted["Name"]} . Please review." // TODO: Customize body
                 );
             }
             else if (int.Parse(decrypted["Flag"].ToString()!) == 2)
