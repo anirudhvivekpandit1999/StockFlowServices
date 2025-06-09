@@ -4,6 +4,7 @@ using StockFlowService.Services;
 using System.Security.Cryptography.Xml;
 using System.Text.Json;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -20,7 +21,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 var tobeencrypted = new
-{ WarehouseId = 1 , Name = "v" };
+{ Flag = 2 , ProductName = "x" ,Count = 1 , Name = "Anirudh"  };
 
 
 var x = CryptoHelper.EncryptData(tobeencrypted);
