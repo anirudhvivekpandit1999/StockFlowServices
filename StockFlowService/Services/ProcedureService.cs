@@ -25,7 +25,6 @@ namespace StockFlowService.Services
                 {
                     object value = param.Value;
 
-                    // Handle JsonElement conversion if needed
                     if (value is JsonElement jsonElement)
                     {
                         value = jsonElement.ValueKind switch
@@ -47,7 +46,6 @@ namespace StockFlowService.Services
             catch (Exception ex)
             {
                 
-                Console.WriteLine($"Error executing stored procedure '{procedureName}': {ex.Message}");
                 return null;
             }
         }

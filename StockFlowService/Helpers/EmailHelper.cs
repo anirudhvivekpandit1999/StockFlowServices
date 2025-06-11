@@ -10,7 +10,7 @@ namespace StockFlowService.Helpers
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("anirudhvpandit.2152@gmail.com", "vwtf lkzn ubjx gmtx"), // Use an App Password if 2FA is enabled
+                Credentials = new NetworkCredential("anirudhvpandit.2152@gmail.com", "vwtf lkzn ubjx gmtx"), 
                 EnableSsl = true,
             };
 

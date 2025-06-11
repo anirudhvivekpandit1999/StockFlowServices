@@ -20,12 +20,7 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
-var tobeencrypted = new
-{ Flag = 2 , ProductName = "x" ,Count = 1 , Name = "Anirudh"  };
 
-
-var x = CryptoHelper.EncryptData(tobeencrypted);
-Console.WriteLine(x);
 
 
 if (app.Environment.IsDevelopment())

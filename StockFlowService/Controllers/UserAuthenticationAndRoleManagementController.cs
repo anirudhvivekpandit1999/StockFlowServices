@@ -21,42 +21,7 @@ namespace StockFlowService.Controllers
             _service = service;
         }
 
-        // [HttpPost("AddNewForm")]
-        // public async Task<IActionResult> AddNewForm([FromBody] EncryptedRequest request)
-        // {
-        //     try
-        //     {
-        //         var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
-        //         Console.WriteLine("Decrypted", decrypted);
-        //         var result = await _service.CallStoredProcedureAsync("spd_AddNewInboundForm", decrypted);
-        //         var encrypted = CryptoHelper.EncryptData(result);
-
-        //         return Ok(new { encryptedData = encrypted });
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         return StatusCode(500, $"Error calling procedure: {ex.Message}");
-        //     }
-        // }
-
-        // [HttpPost("GetStockFlowData")]
-        // public async Task<IActionResult> GetStockFlowData([FromBody] EncryptedRequest request)
-        // {
-        //     try
-        //     {
-
-        //         var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
-        //         var result = await _service.CallStoredProcedureAsync("spd_GetActivityCount", decrypted);
-        //         var encrypted = CryptoHelper.EncryptData(result);
-
-        //         return Ok(new { encryptedData = encrypted });
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         return StatusCode(500, $"Error calling procedure: {ex.Message}");
-        //     }
-        // }
-
+        
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] EncryptedRequest request)
         {
@@ -65,7 +30,6 @@ namespace StockFlowService.Controllers
 
                 var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
                 decrypted["Password"] = CryptoHelper.EncryptData(decrypted["Password"]);
-                Console.WriteLine(decrypted["Password"]);
                 var result = await _service.CallStoredProcedureAsync("spd_Login", decrypted);
                 var encrypted = CryptoHelper.EncryptData(result);
 
@@ -85,7 +49,6 @@ namespace StockFlowService.Controllers
                 
                 var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
                 decrypted["Password"] = CryptoHelper.EncryptData(decrypted["Password"]);
-                Console.WriteLine(decrypted["Password"]);
                 var result = await _service.CallStoredProcedureAsync("spd_SignUp", decrypted);
                 var encrypted = CryptoHelper.EncryptData(result);
 
