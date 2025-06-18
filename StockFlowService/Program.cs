@@ -20,7 +20,11 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+var tobeencrypted = new
+{ Username = "Anirudh2" , Password = "Vishalgad2@"  };
 
+
+var x = CryptoHelper.EncryptData(tobeencrypted);
 
 
 if (app.Environment.IsDevelopment())

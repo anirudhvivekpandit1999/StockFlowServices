@@ -9,9 +9,11 @@ using StockFlowService.Services;
 using static StockFlowService.Controllers.StockInAndOutInboundOutboundMovementController;
 
 using StockFlowService.Helpers;
+using Microsoft.AspNetCore.Cors;
 
 namespace StockFlowService.Controllers
 {
+    [EnableCors("AllowAll")]
     [Route("api/[controller]")]
     public class OrderManagementController : Controller
     {

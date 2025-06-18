@@ -1,11 +1,13 @@
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-
+[EnableCors("AllowAll")]
 [ApiController]
 [Route("api/sync")]
 public class SyncController : ControllerBase
 {
+    
     [HttpPost("push")]
     public IActionResult Push([FromBody] SyncPushRequest request)
     {

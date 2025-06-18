@@ -90,7 +90,7 @@ namespace StockFlowService.Controllers
 
         public class EncryptedRequest
         {
-            public string EncryptedData { get; set; }
+            public string? EncryptedData { get; set; }
         }
     }
 }

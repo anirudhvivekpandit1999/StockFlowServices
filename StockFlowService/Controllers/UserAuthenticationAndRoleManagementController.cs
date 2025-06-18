@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using StockFlowService.Helpers;
@@ -11,7 +12,10 @@ using static StockFlowService.Controllers.StockInAndOutInboundOutboundMovementCo
 
 namespace StockFlowService.Controllers
 {
+    
+    [EnableCors("AllowAll")]
     [Route("api/[controller]")]
+    
     public class UserAuthenticationAndRoleManagementController : Controller
     {
         private readonly ProcedureService _service;
@@ -21,7 +25,7 @@ namespace StockFlowService.Controllers
             _service = service;
         }
 
-        
+
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] EncryptedRequest request)
         {
@@ -46,7 +50,7 @@ namespace StockFlowService.Controllers
         {
             try
             {
-                
+
                 var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
                 decrypted["Password"] = CryptoHelper.EncryptData(decrypted["Password"]);
                 var result = await _service.CallStoredProcedureAsync("spd_SignUp", decrypted);
@@ -61,6 +65,6 @@ namespace StockFlowService.Controllers
             }
         }
 
-        
+
     }
 }
