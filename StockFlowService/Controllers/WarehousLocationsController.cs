@@ -26,13 +26,13 @@ namespace StockFlowService.Controllers
         
         
         [HttpPost("GetWarehouseLocations")]
-        public async Task<IActionResult> GetWarehouseLocations()
+        public async Task<IActionResult> GetWarehouseLocations([FromBody] EncryptedRequest request)
         {
             try
             {
 
-                
-                var result = await _service.CallStoredProcedureAsync("spd_GetWarehouseNames", new Dictionary<string, object> { });
+                var decrypted = CryptoHelper.DecryptData(request.EncryptedData!);
+                var result = await _service.CallStoredProcedureAsync("spd_GetWarehouseNames", decrypted);
                 
                 var encrypted = CryptoHelper.EncryptData(result);
 
