@@ -21,11 +21,17 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 var tobeencrypted = new
-{ Username = "Anirudh2" , Password = "Vishalgad2@"  };
+{
+    TransferChildNumber = "TRN-CH-20250623-001",
+    User = "warehouse-user-12",
+    ProductSerialNumber = "['SN-TRF-3001', 'SN-TRF-3002', 'SN-TRF-3003']",
+    Remark= "Reallocation for zone B optimization",
+    UserId =101
+};
 
 
 var x = CryptoHelper.EncryptData(tobeencrypted);
-
+Console.WriteLine(x);
 
 if (app.Environment.IsDevelopment())
 {
