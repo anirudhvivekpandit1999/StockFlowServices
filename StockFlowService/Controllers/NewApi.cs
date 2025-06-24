@@ -14,11 +14,11 @@ namespace StockFlowService.Controllers
 {
     [EnableCors("AllowAll")]
     [Route("api/[controller]")]
-    public class NewApi : Controller
+    public class NewApiController : Controller
     {
         private readonly ProcedureService _service;
 
-        public NewApi(ProcedureService service)
+        public NewApiController(ProcedureService service)
         {
             _service = service;
         }
