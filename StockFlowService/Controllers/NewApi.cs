@@ -64,7 +64,7 @@ namespace StockFlowService.Controllers
         }
 
         [HttpPost("insertDispatch")]
-        public async Task<IActionResult> insertDispatch([FromBody] EncryptedRequest request)
+        public async Task<IActionResult> InsertDispatch([FromBody] EncryptedRequest request)
         {
             try
             {
