@@ -50,7 +50,6 @@ namespace StockFlowService.Controllers
                 var decrypted = CryptoHelper.DecryptData(request.EncryptedData);
                 
                 var result = await _service.CallStoredProcedureAsync("spd_FetchInventoryDetails", decrypted);
-                //new Dictionary<string, object> { }
                 
                 var encrypted = CryptoHelper.EncryptData(result);
 

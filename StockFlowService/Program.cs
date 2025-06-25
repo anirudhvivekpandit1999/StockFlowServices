@@ -31,7 +31,6 @@ var tobeencrypted = new
 
 
 var x = CryptoHelper.EncryptData(tobeencrypted);
-Console.WriteLine(x);
 
 if (app.Environment.IsDevelopment())
 {

@@ -31,7 +31,6 @@ namespace StockFlowService.Controllers
             try
             {
 
-                // var decrypted = CryptoHelper.DecryptData(request.EncryptedData!);
                 var result = await _service.CallStoredProcedureAsync("sp_GetInventoryOverview", new Dictionary<string, object>());
 
                 var encrypted = CryptoHelper.EncryptData(result);
@@ -50,7 +49,6 @@ namespace StockFlowService.Controllers
             try
             {
 
-                // var decrypted = CryptoHelper.DecryptData(request.EncryptedData!);
                 var result = await _service.CallStoredProcedureAsync("sp_GetStockAnalytics", new Dictionary<string, object>());
 
                 var encrypted = CryptoHelper.EncryptData(result);
